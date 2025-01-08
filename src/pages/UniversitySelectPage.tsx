@@ -1,5 +1,6 @@
 import BackButton from "../components/BackButton";
 import SearchBar from "../components/SearchBar";
+import UnivList from "../components/UnivList";
 
 export default function UniversitySelectPage() {
     return (
@@ -12,24 +13,7 @@ export default function UniversitySelectPage() {
                 <span>학교 이름이 버디야 프로필에 적혀요.</span>
                 <div className="mt-[28px] h-full">
                     <SearchBar />
-                    <ul className="mt-5 max-h-[calc(100vh-300px)] overflow-y-auto ">
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li><li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li><li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li><li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li>
-                        <li>학교 리스트</li><li>학교 리스트</li>
-                    </ul>
+                    <UnivList />
                 </div>
             </main>
             <button className='flex items-center justify-center mt-1 w-full h-[60px] rounded-[12px] bg-primary'>

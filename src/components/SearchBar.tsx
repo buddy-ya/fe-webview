@@ -29,7 +29,7 @@ export default function SearchBar() {
                 value={keyword}
                 onChange={e => handleKeywordChange(e.target.value)}
                 placeholder="학교명을 입력하세요."
-                className="flex-grow ml-2 mt-1 placeholder-gray-400 text-gray-700 "
+                className="flex-grow ml-2 mt-0.5 placeholder-gray-400 text-gray-700 focus:outline-none"
             />
         </div>
     )
