@@ -9,7 +9,7 @@ export default function SearchBar() {
     }
 
     return (
-        <div className="flex items-center w-full rounded-[12px] p-2 border">
+        <div className="flex items-center p-2 w-full h-[42px] rounded-[12px] border">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-gray-500"
@@ -29,7 +29,7 @@ export default function SearchBar() {
                 value={keyword}
                 onChange={e => handleKeywordChange(e.target.value)}
                 placeholder="학교명을 입력하세요."
-                className="flex-grow text-gray-700 ml-2 placeholder-gray-400"
+                className="flex-grow ml-2 mt-1 placeholder-gray-400 text-gray-700 "
             />
         </div>
     )
