@@ -7,4 +7,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none; /* 스크롤 넘침 방지 */
+}
+
+
+* {
+  -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color: transparent; /* prevent tap highlight color / shadow */
 }
