@@ -1,11 +1,11 @@
 interface BackButtonProps {
-    onClick?: () => void;
+    onClick: () => void;
 }
 
 export default function BackButton({ onClick }: BackButtonProps) {
 
     const handleButtonClick = () => {
-        onClick ? onClick() : console.log('버튼 클릭');
+        window?.ReactNativeWebView && onClick();
     }
     return (
         <button onClick={handleButtonClick}>

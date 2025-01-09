@@ -19,13 +19,13 @@ export default function UniversitySelectPage() {
     });
 
     const handleBack = useCallback(() => {
-        window?.ReactNativeWebView?.postMessage(JSON.stringify({
+        window.ReactNativeWebView?.postMessage(JSON.stringify({
             action: 'goBack',
         }));
     }, []);
 
     const handleButtonClick = useCallback(() => {
-        window?.ReactNativeWebView?.postMessage(JSON.stringify({
+        window.ReactNativeWebView?.postMessage(JSON.stringify({
             action: 'goNext',
             payload: {
                 university: selectedUniv.university
