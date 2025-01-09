@@ -7,6 +7,7 @@ interface UnivListProps {
     onSelect: (univ: UnivType) => void;
 }
 
+// TODO: 무한 스크롤 & 가상 스크롤
 export default function UnivList({ keyword, selectedUnivId, onSelect }: UnivListProps) {
 
     const univData = keyword ? univList.filter(univ => univ.name.includes(keyword)) : univList;

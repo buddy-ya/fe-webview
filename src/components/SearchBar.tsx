@@ -5,7 +5,6 @@ interface SearchBarProps {
 
 export default function SearchBar({ keyword, onChange }: SearchBarProps) {
 
-
     return (
         <div className="flex items-center p-2 w-full h-[42px] rounded-[12px] border">
             <svg
